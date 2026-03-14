@@ -68,7 +68,7 @@ values
 insert  into 
 category(category_id,category_name) 
 values 
-('CT01','Electronics'),('CT02','Furniture'),('CT03','Stationery');
+('CT01','Electronics'),('CT02','Furniture'),('CT03','Stationery'),('CT04','Toys'),('CT05','Fruits');
 
 -- Q9: Insert Values in product table
 insert  into 
