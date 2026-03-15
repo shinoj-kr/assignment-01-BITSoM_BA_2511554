@@ -45,6 +45,54 @@
 
 },
 
+     {
+  "category": "Clothing",
+  "item_code": "ITM_TS35008808",
+  "item_name": "T-shirt",
+
+  "product_info": {
+    "brand_name": "Tommy Hilfiger",
+    "product_title": "Europe Self Design Round Neck Slim Fit T-shirt",
+    "product_code": "35008808",
+    "gender": "Men",
+    "color": "Grey"
+  },
+
+  "pricing": {
+    "mrp": 2249,
+    "selling_price": 1281,
+    "discount_percent": 43,
+    "currency": "INR"
+  },
+
+  "size_options": ["S", "M", "L", "XL", "XXL"],
+
+  "material_details": {
+    "fabric": "Cotton",
+    "composition": "100% Regenerative Cotton",
+    "care_instructions": "Hand Wash"
+  },
+
+  "product_features": {
+    "fit": "Slim Fit",
+    "length": "Regular",
+    "neck": "Round Neck",
+    "sleeve_type": "Short Sleeves",
+    "pattern": "Self Design"
+  },
+
+  "ratings": {
+    "average_rating": 4,
+    "total_ratings": 41,
+    "reviews_count": 3
+  },
+
+  "inventory": {
+    "stock_available": true,
+    "seller": "Myntra",
+    "return_policy_days": 7
+  }
+},
   
 
 
