@@ -166,4 +166,13 @@ db.products.find({
     "expiry_date" : {"$lt" : "2025-01-01"}
 });
 // OP4: updateOne() — add a "discount_percent" field to a specific product
+db.products.updateOne(
+  { "item_code": "ITM_RT28C3733S8" },
+  {
+    "$set" : {
+      "pricing.discount_percent": 15
+    }
+  }
+);
+
 // OP5: createIndex() — create an index on category field and explain why
