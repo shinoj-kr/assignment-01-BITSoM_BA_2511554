@@ -93,8 +93,54 @@
     "return_policy_days": 7
   }
 },
-  
+  {
+"category": "Groceries",
+"item_code": "ITM_MLK500A2",
+"item_name": "Buffalo A2 Milk",
 
+"product_info": {
+"brand_name": "Amul",
+"product_title": "Amul Buffalo A2 Milk",
+"unit": "500 ml",
+"country_of_origin": "India"
+},
 
+"pricing": {
+"selling_price": 38,
+"currency": "INR",
+"tax_included": true
+},
+
+"nutritional_information": {
+"energy_kcal_per_100g": 91,
+"protein_g_per_100g": 3,
+"carbohydrates_g_per_100g": 5,
+"total_sugar_g_per_100g": 5,
+"added_sugar_g_per_100g": 0,
+"total_fat_g_per_100g": 6,
+"saturated_fat_g_per_100g": 4,
+"trans_fat_g_per_100g": 0,
+"calcium_per_100g": "0.1 g"
+},
+
+"product_features": {
+"fat_profile": "Full Cream",
+"processing_type": "A2 Milk",
+"biological_source": "Buffalo Milk",
+"sugar_profile": "No Added Sugar"
+},
+
+"additional_details": {
+"shelf_life": "2 days",
+"storage_tips": "Keep under refrigeration",
+"fssai_license": "10012021000071"
+},
+
+"inventory": {
+"stock_available": true,
+"seller": "Zomato Hyperpure Private Limited",
+"return_policy": "Replacement within 24 hours if damaged or incorrect"
+}
+}
 
 ]
