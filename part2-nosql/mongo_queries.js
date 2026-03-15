@@ -161,5 +161,9 @@ db.products.find({
 });
 
 // OP3: find() — retrieve all Groceries expiring before 2025-01-01
+db.products.find({
+    "category" : "Groceries",
+    "expiry_date" : {"$lt" : "2025-01-01"}
+});
 // OP4: updateOne() — add a "discount_percent" field to a specific product
 // OP5: createIndex() — create an index on category field and explain why
