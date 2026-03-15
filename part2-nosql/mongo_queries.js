@@ -42,6 +42,11 @@ db.products.insertMany([
 "compressor" : "Digital Inverter Compressor",
  "refrigerant" : "R-600a",
  "cooling_technology" : "Direct Cool"
+},
+          
+"pricing": {
+   "price": 23000,
+   "currency": "INR"
 }
 
 },
