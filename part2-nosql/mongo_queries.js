@@ -176,3 +176,26 @@ db.products.updateOne(
 );
 
 // OP5: createIndex() — create an index on category field and explain why
+
+db.products.createIndex({ category: 1 });
+
+Explanation
+Without an index, MongoDB performs a collection scan (COLLSCAN), meaning it checks every document in the collection to find matching records.
+Creating an index on the category field allows MongoDB to perform an index scan (IXSCAN). This enables MongoDB to quickly locate matching 
+documents without scanning the entire collection, improving query performance.For example, after creating the index, if we run the query:
+db.products.find({ category: "Electronics" });
+MongoDB will use the index on the category field to locate the relevant documents faster. Based on my inserted documents, the collection 
+initially stores the documents in the following 
+order:
+Electronics - doc1
+Clothing - doc2
+Groceries - doc3
+However, when the index is created, MongoDB builds a separate lookup structure where the category values are stored in ascending order:
+Clothing - doc2
+Electronics - doc1
+Groceries - doc3
+When a query such as find({ category: "Electronics" }) is executed, MongoDB searches the index using IXSCAN, which allows it to quickly 
+locate the matching document instead of scanning all documents in the collection.
+
+
+
