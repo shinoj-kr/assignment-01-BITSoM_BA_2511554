@@ -11,7 +11,7 @@ A Delete Anomaly : In the flat file orders_flat.csv, order, customer and product
 
 For example, if the record with order_id = ORD1185, (row 13) is deleted, the product information such as product_name = Webcam is also be removed completely from the table since that product appears only in that row. This loss of important information due to deletion of a record is called a Delete Anomaly.
 
-##Subjective
+## Subjective
 ## Normalization Justification
 
 Keeping all the data in a single table may appear simple, but it leads to several data anomalies such as insert, update, and delete anomalies. Normalization helps to eliminate these issues by organizing data into related tables.
