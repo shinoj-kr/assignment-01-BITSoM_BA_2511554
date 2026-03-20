@@ -33,10 +33,17 @@ CREATE TABLE dim_store (
 USE retail_transactions;
 CREATE TABLE dim_date (
     date_id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    UNIQUE (full_date)
-);
+    full_date DATE NOT NULL UNIQUE,
 
+    day INT,
+    month INT,
+    year INT,
+    quarter INT,
+
+    day_name VARCHAR(10),
+    month_name VARCHAR(10),
+    is_weekend BOOLEAN
+);
 
 ## Transaction Fact Table Creation
 USE retail_transactions;
@@ -96,18 +103,22 @@ VALUES
 
 ## Insert 10 values of retail_transactions.csv into Date dimension table
 use retail_transactions;
-INSERT INTO dim_date (full_date)
+INSERT INTO dim_date (
+    full_date, day, month, year, quarter, 
+    day_name, month_name, is_weekend
+)
 VALUES
-('2023-01-01'),
-('2023-01-02'),
-('2023-01-03'),
-('2023-01-04'),
-('2023-01-05'),
-('2023-01-06'),
-('2023-01-07'),
-('2023-01-08'),
-('2023-01-09'),
-('2023-01-10');
+('2023-01-01', 1, 1, 2023, 1, 'Sunday', 'January', TRUE),
+('2023-01-02', 2, 1, 2023, 1, 'Monday', 'January', FALSE),
+('2023-01-03', 3, 1, 2023, 1, 'Tuesday', 'January', FALSE),
+('2023-01-04', 4, 1, 2023, 1, 'Wednesday', 'January', FALSE),
+('2023-01-05', 5, 1, 2023, 1, 'Thursday', 'January', FALSE),
+('2023-01-06', 6, 1, 2023, 1, 'Friday', 'January', FALSE),
+('2023-01-07', 7, 1, 2023, 1, 'Saturday', 'January', TRUE),
+('2023-01-08', 8, 1, 2023, 1, 'Sunday', 'January', TRUE),
+('2023-01-09', 9, 1, 2023, 1, 'Monday', 'January', FALSE),
+('2023-01-10', 10, 1, 2023, 1, 'Tuesday', 'January', FALSE);
+
 
 ## Insert 10 values into Store dimension table
 use retail_transactions;
@@ -130,14 +141,14 @@ use retail_transactions;
 INSERT INTO fact_transaction (
 transaction_id, product_id, customer_id, store_id, date_id, units_sold, unit_price
 ) VALUES
-('TXN5000',1,'CUST045',1,149,3,49262.78),
-('TXN5001',2,'CUST012',1,210,7,23226.12),
-('TXN5002',3,'CUST033',2,36,12,48703.39),
-('TXN5003',4,'CUST041',3,75,5,58851.01),
-('TXN5004',5,'CUST009',4,12,9,42343.15),
-('TXN5005',6,'CUST025',5,88,6,39854.96),
-('TXN5006',7,'CUST018',2,167,14,2317.47),
-('TXN5007',8,'CUST003',3,54,11,30187.24),
-('TXN5008',9,'CUST028',4,63,4,35451.81),
-('TXN5009',4,'CUST020',3,141,3,58851.01);
+('TXN5000',1,'CUST045',1,1,3,49262.78),
+('TXN5001',2,'CUST021',1,2,11,23226.12),
+('TXN5002',3,'CUST019',2,3,20,48703.39),
+('TXN5003',2,'CUST007',3,4,14,23226.12),
+('TXN5004',4,'CUST004',4,5,10,58851.01),
+('TXN5005',11,'CUST027',5,6,12,52464.00),
+('TXN5006',4,'CUST025',2,7,6,58851.01),
+('TXN5007',7,'CUST041',3,8,16,2317.47),
+('TXN5008',16,'CUST030',4,9,9,27469.99),
+('TXN5009',4,'CUST020',3,10,3,58851.01);
 
