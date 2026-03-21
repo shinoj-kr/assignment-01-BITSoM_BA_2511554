@@ -1,5 +1,5 @@
 ## Part 5 — Data Lakes & DuckDB
-## .1 — Cross-Format Queries
+## 5.1 — Cross-Format Queries
 
 -- Q1: List all customers along with the total number of orders they have placed
 
