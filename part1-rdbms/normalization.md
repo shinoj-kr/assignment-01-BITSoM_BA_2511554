@@ -9,7 +9,7 @@ An Update Anomaly : In the flat file orders_flat.csv, customer details such as c
 
 A Delete Anomaly : In the flat file orders_flat.csv, order, customer and product information are stored together in the same table. When a record is deleted, other important information stored in that row may also be lost unintentionally.
 
-For example, if the record with order_id = ORD1185, (row 13) is deleted, the product information such as product_name = Webcam is also be removed completely from the table since that product appears only in that row. This loss of important information due to deletion of a record is called a Delete Anomaly.
+For example, if the record with order_id = ORD1185, (row 13) is deleted, the product information such as product_name = Webcam will also be removed completely from the table since that product appears only in that row. This loss of important information due to deletion of a record is called a Delete Anomaly.
 
 ## Subjective
 ## Normalization Justification
