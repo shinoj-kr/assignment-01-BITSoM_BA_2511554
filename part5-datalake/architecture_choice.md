@@ -1,12 +1,14 @@
 ## Subjective
 ## Architecture Recommendation
 
-For a fast-growing food delivery startup, I would recommend a Data Lakehouse architecture. This is because the company handles different types of data such as GPS logs, customer reviews and ratings, payment transactions, and menu images. These include structured data like transactions and ratings, as well as unstructured data like text and images.
+For a fast-growing food delivery startup, I would recommend a Data Lakehouse architecture. This is because the company handles different types of data such as GPS location logs, customer reviews, payment transactions, and restaurant menu images. These include structured data like transactions, as well as semi-structured and unstructured data like text and images.
 
-A lakehouse is suitable because it can store all these data types in one place without requiring a fixed schema. This makes it easy to manage and analyze diverse data as the business grows. For example, ratings and transactions can be used for reporting and performance tracking, while reviews and images can support machine learning tasks like sentiment analysis, recommendation systems, and even image-based menu recognition.
+The first reason for choosing a lakehouse is its ability to store all these data types in a single platform without requiring a fixed schema. This flexibility allows the system to adapt easily as new data sources are added and the business continues to grow.
 
-Another advantage is that a lakehouse supports both analytics and AI workloads on the same platform. This eliminates the need to maintain separate systems, making the architecture simpler and more efficient. It also improves data consistency since all teams work on the same data source.
+The second reason is that a lakehouse supports both analytical and machine learning workloads. Structured data such as transactions and ratings can be used for reporting and dashboards, while unstructured data like reviews and images can be used for sentiment analysis, recommendation systems, and image-based insights.
 
-Additionally, it is cost-effective and highly scalable, which is important when handling large volumes of data such as images and continuous GPS tracking. Overall, a Data Lakehouse provides the right balance of flexibility, scalability, and performance for this scenario.
+The third reason is scalability and cost-effectiveness. A lakehouse can handle large volumes of data such as continuous GPS streams and images efficiently while keeping storage and processing costs relatively low.
+
+Overall, a Data Lakehouse provides a balanced and efficient solution for managing diverse data and supporting both analytics and AI use cases. This also makes the architecture future-ready as data volume and complexity increase.
 
 
