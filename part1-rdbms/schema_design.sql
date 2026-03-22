@@ -3,6 +3,7 @@
 CREATE DATABASE assignment_db;
 
 -- Create City table
+use assignment_db;
 CREATE TABLE city (
   city_id varchar(50),
   city_name varchar(50) NOT NULL UNIQUE,
