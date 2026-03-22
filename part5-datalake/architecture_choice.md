@@ -1,7 +1,7 @@
 ## Subjective
 ## Architecture Recommendation
 
-For a fast-growing food delivery startup, I would recommend a Data Lakehouse architecture. This is because the company handles different types of data such as GPS location logs, customer reviews, payment transactions, and restaurant menu images. These include structured data like transactions, as well as semi-structured and unstructured data like text and images.
+For a fast-growing food delivery startup, I would recommend a Data Lakehouse architecture. This is because the company handles different types of data such as GPS location logs, customer reviews, ratings, payment transactions, and restaurant menu images. These include structured data like transactions, as well as semi-structured and unstructured data like text and images.
 
 The first reason for choosing a lakehouse is its ability to store all these data types in a single platform without requiring a fixed schema. This flexibility allows the system to adapt easily as new data sources are added and the business continues to grow.
 
