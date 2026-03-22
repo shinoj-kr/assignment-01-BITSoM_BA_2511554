@@ -112,7 +112,7 @@ db.products.insertMany([
 "unit": "500 ml",
 "country_of_origin": "India"
 },
-"expiry_date": ISODate("2025-01-01"),
+"expiry_date": ISODate("2024-12-31"),
 "pricing": {
 "selling_price": 38,
 "currency": "INR",
