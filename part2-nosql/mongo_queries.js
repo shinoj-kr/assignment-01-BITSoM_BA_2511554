@@ -1,5 +1,6 @@
 
 // OP1: insertMany() — insert all 3 documents from sample_documents.json
+use ecommerce_catalog
 db.products.insertMany([
      {
      "category" : "Electronics",
