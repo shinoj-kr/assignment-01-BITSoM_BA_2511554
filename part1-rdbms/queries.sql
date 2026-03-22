@@ -1,7 +1,6 @@
 ##1.3 — SQL Queries
 
--- Q1: List all customers from Mumbai along with their total order value
-       
+-- Q1: List all customers from Mumbai along with their total order value     
 use assignment_db;
 select c.customer_name,sum(o.quantity * o.unit_price) AS total_order_value from customer c
 inner join orders o
@@ -12,7 +11,6 @@ where ct.city_name = 'Mumbai'
 group by c.customer_id,c.customer_name;
 
 -- Q2: Find the top 3 products by total quantity sold
-
 use assignment_db;
 select p.product_name,sum(o.quantity) AS total_quantity_sold from product p
 inner join orders o
@@ -22,7 +20,6 @@ order by sum(o.quantity) desc
 limit 3;
 
 -- Q3: List all sales representatives and the number of unique customers they have handled
-
 use assignment_db;
 select e.sales_rep_name,
        count(distinct(o.customer_id)) AS unique_customers
@@ -32,7 +29,6 @@ left join orders o
 group by e.sales_rep_id, e.sales_rep_name;
 
 -- Q4: Find all orders where the total value exceeds 10,000, sorted by value descending
-
 use assignment_db;
 select order_id,
        sum(quantity * unit_price) AS total_value
@@ -42,7 +38,6 @@ having total_value > 10000
 order by total_value desc;
 
 -- Q5: Identify any products that have never been ordered
-
 use assignment_db;
 select p.product_name
 from product p
