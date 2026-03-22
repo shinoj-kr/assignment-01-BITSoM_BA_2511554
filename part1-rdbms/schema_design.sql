@@ -1,8 +1,7 @@
 ## 1.2 — Schema Design
 -- Create Database
 CREATE DATABASE assignment_db;
--- Use Database
-USE assignment_db;
+
 -- Create City table
 CREATE TABLE city (
   city_id varchar(50),
