@@ -1,4 +1,4 @@
-
+-- 3.1 — Star Schema Design
 -- Q1: Total sales revenue by product category for each month
 use retail_transactions;
 SELECT 
